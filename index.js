@@ -2,13 +2,14 @@
 const express = require('express')
 const router = require('./router/router')
 const morgan = require('morgan')
+const cors = require('cors');
 const http = require('http')
 const app = express()
 const servidor = http.createServer(app)
 const { mildelware } = require('./mildelware')
 require('dotenv').config()
 
-mildelware(app, morgan, express)
+mildelware(app, morgan, express, cors)
 app.use(router)
 
 //SERVIDOR

@@ -1,6 +1,7 @@
 # Ejecutar Backend
-Npm run dev
 
+Npm i
+Npm run dev
 
 # Modificar Key DataBase
 
